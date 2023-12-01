@@ -1,0 +1,405 @@
+/* general body and heading css */
+
+html, body{
+	height: 100%;
+	font-family: 'Saira Condensed', sans-serif;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin: 0;
+	font-weight: 600px;
+}
+
+h1{
+	font-size: 4.375rem;
+}
+
+h2{
+	font-size: 2.25rem;
+}
+
+h3{
+	font-size: 1.875rem;
+}
+
+h4{
+	font-size: 1.5rem;
+}
+
+h5{
+	font-size: 1.125rem;
+}
+
+h6{
+	font-size: 1rem;
+}
+
+p{
+	font-size: 0.875rem;
+	line-height: 2;
+}
+
+img{
+	max-width: 100%;
+}
+a{
+	font-size:2rem;
+}
+a:hover,
+a:focus{
+	text-decoration: none;
+	outline: none;
+	font-size: 2.2rem;
+	opacity: 1.2;
+}
+
+.spad{
+	padding-top: 105px;
+	padding-bottom: 105px;
+}
+
+/*-------------
+Header Section
+-------------*/
+
+.header-section{
+	background: #bfb8ae;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	padding: 10.5px 10px;
+	z-index: 99;
+	top: 0;
+	left: 0;
+}
+
+nav{
+	display: flex;
+	overflow: hidden;
+	padding: 0 105px;
+	justify-content: space-between;
+	align-items: center;
+}
+.site-bar{
+	display:none;
+}
+.site-logo img{
+	height: 70px;
+}
+
+.main-menu{
+	flex: 1;
+	text-align: center;
+}
+
+.main-menu li{
+	list-style: none;
+	display: inline-block;
+	padding: 13px 13px 1px 30px;
+	position: relative;
+}
+
+.main-menu li a{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #3d3934;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	text-decoration: none;
+}
+
+
+/*-------------
+Search Section
+-------------*/
+.search-section{
+	
+	position: relative;
+	display: block;
+}
+
+.search-section .search-bar{
+	margin: 30px 0;
+	display: flex;
+
+}
+
+.search-section .search-bar input{
+	min-width: 95%;
+	height: 50px;
+	border: 1px solid grey;
+  	float: left;
+
+}
+
+.search-section .search-bar button{
+	display: inline-block;
+	width: 5%;
+	height:50px;
+	background: #303C6C;
+	float: left;
+	padding: 10px;
+	color: white;
+}
+
+/*-------------
+  Info Section
+-------------*/
+
+	.info-section{
+		width: 100%;
+		height: auto;
+	}
+
+	.info-title{
+		font-size: 3rem; 
+		margin: 150px 100px 20px 120px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.info-section .inforow{
+		margin: 0 100px;
+		display: flex;
+	}
+
+	.info-section .inforow:nth-child(even){
+		flex-direction: row-reverse;
+	}
+
+	.info-row{
+		margin: 40px 0;
+	}
+
+	.info-image img{
+		margin-left: 5rem;
+		width: 80%;
+		height: 350px;
+	}
+
+	.info-row .info-container{
+		padding: 40px 40px;
+		background: #EBF2FA;
+	}
+
+	.info-row .info-container h3{
+		padding-bottom: 15px;
+	}
+
+/*-----------------
+Report Form -hidden
+------------------*/
+
+.modal{
+	display: none;
+	/* position: fixed; */
+	z-index: 9999999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-top: 60px;
+}
+
+.close{
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+	color: black;
+	cursor: pointer;
+}
+
+.modal-content{
+	background-color: #fefefe;
+	margin: 5px auto;
+	border: 1px solid;
+	color: #888;
+	width: 60%;
+}
+
+.contact-title{
+	color: #3d3934;
+	text-align: center;
+	margin: 24px 0 0 0;
+}
+
+.container{
+	padding: 16px;
+}
+
+.report-form form{
+	border: 3px solid #f1f1f1;
+}
+
+.report-form input[type=text], input[type=textarea]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 3px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.report-form select{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 3px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.report-form button{
+	background-color: #e0d9d1;
+	color: #3d3934;
+	padding: 10px 30px;
+	margin: 8px 0 8px 210px;
+	cursor: pointer;
+	width: auto;
+}
+
+.cancelbtn{
+	background-color: #fff;
+	color: #303c6c;
+	border: 1px solid#3d3934;
+}	
+.report-btn{
+	display:block;
+}
+
+/*-------------------
+  Footer-top Section
+--------------------*/
+.footer-top-section{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-top: 50px;
+	color: #3d3934;
+}
+
+.footer-widget h4{
+	color: #3d3934;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.footer-widget ul{
+	margin: 0 15px;
+	padding:0;
+}
+.footer-widget li{
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.footer-logo{
+	float: right;
+	width: 200px;
+	margin-top: -30px;
+	margin-left: 100px;
+}
+
+/*footer section*/
+.copyright{
+	margin-top: 30px;
+	position: relative;
+	color: #3d3934;
+	font-size: 14px;
+	padding-top: 3px;
+	font-weight: 400px;
+}
+
+.report{
+	position: relative;
+	color: #3d3934;
+	font-size: 14px;
+	padding-bottom: 30px;
+}
+
+/*media screen: 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	.report-form button{
+		margin-left: 0;
+		width: 100%;
+	}
+}
+
+/*Tablet: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+	.search-section .search-bar button{
+		margin-left: -30px;
+		width: 7%;
+	}
+
+	.report-form button{
+		margin-left: 0;
+		width: 100%;
+	}
+}
+
+/*Large Mobile: 767px */
+@media only screen and (max-width: 767px) {
+
+.header-section{
+	width: 100%;
+	height: auto;
+	padding: 0 10px;
+}
+	
+nav{
+		padding: 0 30px;
+}
+
+.main-menu li{
+		padding: 13px 5px 1px 5px;
+}
+
+.main-menu li a{
+		font-size: 1.0rem;
+}
+
+.search-section .search-bar button{
+		margin-left: -30px;
+		width: 10%;
+}
+
+.info-title{
+		font-size: 2.5rem; 
+		margin: 100px 100px 0 120px;
+		text-align: center;
+		text-transform: uppercase;
+}
+
+.info-image img{
+		margin-left: 1rem;
+		width: 100%;
+		height: auto;
+}
+
+.report-form button{
+		margin-left: 0;
+		width: 100%;
+}
+
+}
+
